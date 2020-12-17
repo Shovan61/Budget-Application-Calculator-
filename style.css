@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    min-height: 100%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('./img/pexels-pixabay-259132.jpg') no-repeat center center/cover;
+    min-height: 100%;
+   
+}
+
+.income-color{
+    color: rgb(17, 109, 17);
+}
+.expense-color{
+    color: rgb(214, 6, 6);
+}
+
+.container{
+    background-color: rgba(241, 237, 237, 0.9);
+    padding-bottom: 10rem;
+    min-height: 100%;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.text-primary{
+    color: rgb(85, 158, 16);
+}
+
+#header h1{
+    text-align: center;
+    padding: 20px 0;
+}
+
+#budget-h2{
+    padding: 20px 20px;
+    text-align: center;
+}
+
+#inc-exp{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 120px;
+}
+
+#input-field{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+#type{
+    margin-right: 2rem;
+    
+}
+#type-list{
+    padding: 5px 10px;
+    border-radius: 5px;
+    
+}
+
+.input-box{
+    width: 13%;
+    border-radius: 5px;
+}
+
+#input-name{
+    margin-right: 5px;
+}
+
+.btn {
+    margin-left: 0.5rem;
+    background-color:rgb(85, 158, 16);
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border-radius: 8px;
+}
+
+.btn:hover{
+    background-color:rgb(52, 100, 7);
+}
+
+.btn-remove{
+    background-color: rgb(163, 4, 4);
+}
+
+.btn-remove:hover{
+    background-color: rgb(98, 16, 16);
+}
+
+.edit{
+    background-color: rgba(241, 237, 237, 0.9);
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #333;
+    outline: none;
+    
+}
+.edit:hover{
+    transform: scale(1.5);
+    color: blue;
+}
+
+#update-btn, #remove-btn{
+    visibility: hidden;
+}
+
+/* .seperation{
+    border: 0.1px #333 dotted;
+    
+} */
+
+.list{
+    display: flex;
+    justify-content:center;
+    text-align:center;
+    padding: 10px 150px;
+}
+
+#inc-list{
+    position: relative;
+    right: 120px;
+    margin-right: 5rem;
+}
+
+.list ul li {
+list-style: none;
+
+line-height: 2rem;
+}

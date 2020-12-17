@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Budget Web Application</title>
+</head>
+<body>
+    <div class="container">
+        <header id="header">
+            <h1><span class="text-primary">Budget</span> Calculator</h1> 
+            <h2 id="budget-h2">
+                <span class="text-primary">Bud</span>get<div id="budget">0</div>
+            </h2>          
+        </header>
+        <!-- Income expense float  -->
+        <section id="inc-exp">
+            <div id="inc">
+                <h3>Total <span class="text-primary">Inc</span>ome</h3>
+                <div id="inc-value">&nbsp;$ &nbsp;0</div>
+            </div>
+            <div id="chart">
+                <!-- Pie Chart -->
+                <canvas id="my-chart"></canvas>
+            </div>
+            <div id="exp">
+                <h3>Total <span class="text-primary">Exp</span>ense</h3>
+                <div id="exp-value">&nbsp;$ &nbsp;0</div>
+            </div>
+        </section>
+
+        <!-- input field -->
+        <section id="input-field" class="input">
+         <div id="type">
+             <label for="type"><strong><span class="text-primary">Choose</span> Type</strong></label>
+             <select id="type-list">
+                 <option disabled hidden selected>Select</option>
+                 <option value="income">Income</option>
+                 <option value="expense">Expense</option>
+             </select>
+         </div>
+          <input class="input-box" type="text" id="input-name" placeholder="Enter Item Name">
+          <input class="input-box" type="number" id="input-amount" placeholder="Enter amount">
+          <button id="submit-btn" class="btn"><i class="fas fa-check"></i> Submit</button>
+          
+          <button id="update-btn" class="btn btn-update"><i class="fas fa-pen"></i> Update</button>
+          <button id="remove-btn" class="btn btn-remove"><i class="fas fa-minus-circle"></i> Remove</button>
+          <button id="clear-btn" class="btn btn-remove"><i class="fas fa-trash-alt"></i> Clear All</button>
+          <!-- <i class="fas fa-edit"></i> -->
+        </section>
+
+
+        <!-- seperation mark -->
+         <!-- <div class="seperation"></div> -->
+
+        <!-- list of income and expenses -->
+        <section class="list">
+            <div id="inc-list">
+              <h3><span class="text-primary">Inc</span>ome</h3>
+             <!--<ul>
+                <li id="1" type="income"><strong>
+                    Item-1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="income-color">2000</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                 <button class="edit"><i class="fas fa-edit"></i></button>
+                </strong>
+                </li>             
+             </ul>  -->
+            </div>
+            <div id="exp-list">
+               <h3><span class="text-primary">Exp</span>ense</h3>
+             <!--<ul>
+                <li id="1" type="expense"><strong>
+                    Item-1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="expense-color">2000</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                 <button class="edit"><i class="fas fa-edit"></i></button>
+                </strong>
+                </li>
+ 
+            </ul>  -->
+            </div>
+        </section>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
